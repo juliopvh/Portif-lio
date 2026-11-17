@@ -36,9 +36,19 @@
         background-color: black;
         background-image: url("./cursor.gif");
         background-repeat: no-repeat;
-        background-size: 50;
+        background-size: 50px;
         background-attachment: fixed;
         background-position-x: -92px;
+      }
+      @media (max-width: 767px) {
+        #app {
+          background-attachment: scroll;
+          background-position: -92px top;
+        }
+      }
+      html, body {
+        background-color: black !important;
+        min-width: 100%;
       }
       .v-application,
       .v-application .body-1,
